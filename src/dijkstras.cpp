@@ -2,9 +2,14 @@
 #include <iostream>
 #include <vector> 
 #include <map>
+using namespace std;
+
+//returns total cost
+int BFS(vector<pair<int,int>> * path, vector<vector<int>> * map, int runnerStartRow, int runnerStartCol, int runnerEndRow, int runnerEndCol) {
+    return 1;
+}
 
 // Main Execution
-using namespace std;
 int main(int argc, char *argv[]) {
     int numTiles;
     while (cin >> numTiles) {
@@ -36,6 +41,14 @@ int main(int argc, char *argv[]) {
         //finds runner start and end positions
         int runnerStartRow, runnerStartCol, runnerEndRow, runnerEndCol;
         cin >> runnerStartRow >> runnerStartCol >> runnerEndRow >> runnerEndCol;
+
+        //finds path and outputs total size
+        vector<pair<int,int>> path;
+        cout << BFS(&path, &map, runnerStartRow, runnerStartCol, runnerEndRow, runnerEndCol) << endl;
+        //outputs path
+        for (size_t i = 0; i < path.size(); i++) {
+            cout << path[i].first << " " << path[i].second << endl;
+        }
     }
     return 0;
 }
