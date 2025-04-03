@@ -10,10 +10,10 @@ int main(int argc, char *argv[]) {
     srand(time(0));
     vector<char> tiles;
     int tile = rand()%10;
-    cout << tile << endl;
     if (tile < 3) {
         tile = 3;
     }
+    cout << tile << endl;
     for (int i = 0; i < tile; i++) {
         cout << (char)('a' + i) << " " << (rand() % 9) + 1 << endl;
         tiles.push_back('a' + i);
