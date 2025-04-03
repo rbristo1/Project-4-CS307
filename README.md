@@ -30,6 +30,10 @@ Output
 
 # Project-4-CS307
 
+To use:
+Compile with make
+use "src/generateMap N | src/dijkstras" to test with a random board of size N
+
 | N             | Elapsed Time  | Memory Usage   |
 |---------------|---------------|----------------|
 | 10            | .003 s           | 85,348 B        |
