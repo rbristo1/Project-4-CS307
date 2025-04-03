@@ -8,9 +8,9 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     srand(time(0));
-    cout << argv[1] << endl;
     vector<char> tiles;
     int tile = rand()%10;
+    cout << tile << endl;
     if (tile < 3) {
         tile = 3;
     }
